@@ -3,11 +3,11 @@
 import UIKit
 
 // n - count of fibonacci numbers in result
-func fibonacci (n: Int) -> Array<Int> {
+func fibonacci (n: Int) -> (Int, Array<Int>) {
     
     if (n < 3) {
         println("Sorry, input paramerter must be more than 3.")
-        return []
+        return (0,[])
     }
     
     var count = n - 1
@@ -17,8 +17,8 @@ func fibonacci (n: Int) -> Array<Int> {
         numbers.append(numbers[index-1] + numbers[index-2])
     }
     
-    return numbers
+    return (n, numbers)
 }
 
-var result = fibonacci(5)
+println(fibonacci(10))
 
