@@ -7,7 +7,7 @@ func fibonacci (n: Int) -> (Int, Array<Int>) {
     
     if (n < 3) {
         println("Sorry, input paramerter must be more than 3.")
-        return (0,[])
+        return (n,[])
     }
     
     var count = n - 1
