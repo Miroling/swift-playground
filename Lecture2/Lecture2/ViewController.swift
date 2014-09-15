@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //if (!user.isLogedIn) {
-        let loginController: UIViewController = UIStoryboard(name: "Authentification", bundle: nil).instantiateInitialViewController() as UIViewController
+        let loginController: UIViewController = UIStoryboard(name: "Authentification", bundle: nil).instantiateInitialViewController() as LoginViewController
         
         navigationController!.presentViewController(loginController, animated: true, completion: nil)
         //}

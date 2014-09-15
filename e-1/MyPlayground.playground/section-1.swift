@@ -2,10 +2,27 @@
 
 import UIKit
 
-var str = "Hello, playground"
+var myString: String? = "Привет"
 
+let unacked = myString!
 
+//Задекларируйте класс Student, который наследуется от класса Human и реализует протокол Learnable
 
-for index in 0...countElements(str) {
-    println(advance(index, index+1))
+protocol Learnable {
+    func study()
+}
+
+class Human {
+
+    init(){
+        println("Human initialized")
+    }
+
+}
+
+class Student: Human, Learnable {
+    
+    func study() {
+        //<#code#>
+    }
 }
