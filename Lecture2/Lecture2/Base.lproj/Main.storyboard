@@ -14,14 +14,14 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="fot-L2-OKT" kind="relationship" relationship="rootViewController" id="BRK-hT-WI8"/>
+                        <segue destination="fot-L2-OKT" kind="relationship" relationship="rootViewController" id="r6v-PC-ZuY"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="95g-ey-UdR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-964" y="179"/>
+            <point key="canvasLocation" x="-1095" y="167"/>
         </scene>
-        <!--Lecture Table View Controller-->
+        <!--Lectures-->
         <scene sceneID="obW-bu-nMG">
             <objects>
                 <tableViewController id="fot-L2-OKT" customClass="LectureTableViewController" customModule="Lecture2" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,6 +43,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="zmj-p8-Af9" kind="push" identifier="showLectureDetails" id="C5y-F4-i17"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -50,11 +53,36 @@
                             <outlet property="delegate" destination="fot-L2-OKT" id="O6y-E3-69q"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Aem-uB-Fl1"/>
+                    <navigationItem key="navigationItem" title="Lectures" id="Aem-uB-Fl1"/>
+                    <connections>
+                        <outlet property="navigation" destination="Aem-uB-Fl1" id="be8-sn-Tv0"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bl9-Ib-z74" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-534" y="179"/>
+            <point key="canvasLocation" x="-683" y="167"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="bfM-6o-P4n">
+            <objects>
+                <viewController title="Title" id="zmj-p8-Af9" customClass="DetailsViewController" customModule="Lecture2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dLU-d1-EYX"/>
+                        <viewControllerLayoutGuide type="bottom" id="ttc-L2-ymm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="goC-6B-N5k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VB6-JP-9Jm"/>
+                    <connections>
+                        <outlet property="lectureTitle" destination="VB6-JP-9Jm" id="ctq-Dr-n2n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZt-Bo-MHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-235" y="167"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

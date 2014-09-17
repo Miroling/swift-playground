@@ -1,4 +1,4 @@
-//
+		//
 //  LectureTableViewController.swift
 //  Lecture2
 //
@@ -9,7 +9,9 @@
 import UIKit
 
 class LectureTableViewController: UITableViewController {
-
+    
+    @IBOutlet weak var navigation: UINavigationItem?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,9 +44,27 @@ class LectureTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("LectureCell") as UITableViewCell
         
-        cell.textLabel?.text = "Lecture #\(indexPath.row + 1)"
+        cell.textLabel?.text = generateItemName(indexPath.row)
         
         return cell
+    }
+    
+    func generateItemName(number: Int) -> String {
+        return "Lecture #\(number + 1)"
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        
+        if (segue.identifier == "showLectureDetails") {
+            //get a reference to the destination view controller
+            
+            let cell = sender as UITableViewCell
+            if let indexPath = self.tableView.indexPathForCell(cell) {
+                let destinationVC:DetailsViewController = segue.destinationViewController as DetailsViewController
+                destinationVC.title = generateItemName(indexPath.row)
+            }
+            
+        }
     }
 
     /*

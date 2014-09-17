@@ -15,6 +15,7 @@
 		9DD8BF3619BD97B300CF4A0A /* Lecture2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD8BF3519BD97B300CF4A0A /* Lecture2Tests.swift */; };
 		9DD8BF4019BDA3E500CF4A0A /* Authentification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD8BF3F19BDA3E500CF4A0A /* Authentification.storyboard */; };
 		9DD8BF4319BDA6FA00CF4A0A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD8BF4219BDA6FA00CF4A0A /* LoginViewController.swift */; };
+		9DE49B4519C722C80011FDE9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE49B4419C722C80011FDE9 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		9DD8BF3519BD97B300CF4A0A /* Lecture2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lecture2Tests.swift; sourceTree = "<group>"; };
 		9DD8BF3F19BDA3E500CF4A0A /* Authentification.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentification.storyboard; sourceTree = "<group>"; };
 		9DD8BF4219BDA6FA00CF4A0A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
+		9DE49B4419C722C80011FDE9 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = Controllers/DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				9DD8BF2419BD97B300CF4A0A /* ViewController.swift */,
 				9DD8BF4219BDA6FA00CF4A0A /* LoginViewController.swift */,
 				9D91B8E619C7172F00ACBEE1 /* LectureTableViewController.swift */,
+				9DE49B4419C722C80011FDE9 /* DetailsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				9DD8BF4319BDA6FA00CF4A0A /* LoginViewController.swift in Sources */,
 				9DD8BF2519BD97B300CF4A0A /* ViewController.swift in Sources */,
 				9DD8BF2319BD97B300CF4A0A /* AppDelegate.swift in Sources */,
+				9DE49B4519C722C80011FDE9 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
